@@ -1,0 +1,20 @@
+.CalendarItem {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  text-align: start;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.CalendarItem:last-child {
+  margin-bottom: 0;
+}
+
+.CalendarItem__buttons__btn {
+  margin-right: 10px;
+}
+.CalendarItem__buttons__btn:last-child {
+  margin-right: 0;
+}

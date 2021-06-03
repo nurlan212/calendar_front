@@ -3,6 +3,7 @@ import {createBrowserHistory} from 'history';
 import createMiddleware from 'redux-saga';
 import {connectRouter, routerMiddleware} from 'connected-react-router';
 import usersReducer from '../store/reducers/usersReducer';
+import calendarsReducer from '../store/reducers/calendarsReducer';
 import {rootSaga} from './sagas/index';
 import {loadFromLocalStorage, saveToLocalStorage} from './localStorage';
 
@@ -11,6 +12,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const rootReducer = combineReducers({
   users: usersReducer,
+  calendars: calendarsReducer,
   router: connectRouter(history)
 });
 

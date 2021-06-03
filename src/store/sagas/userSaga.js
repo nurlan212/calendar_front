@@ -12,7 +12,6 @@ export function* registerUserSaga({user}) {
         yield put(push("/"));
         yield NotificationManager.success("Register successful", "Success message", 5000);
     } catch(e) {
-      console.log(e.message);
         if (e.response && e.response.data) {
             yield put(addUserError(e.response.data));
         } else {
