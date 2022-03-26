@@ -2,7 +2,7 @@ import axios from "axios";
 import store from "./store/configStore";
 
 const instanse = axios.create({
-  // baseURL: "http://localhost:8000/"
+  // baseURL: "http://localhost:8000/",
   baseURL: "https://epic-beaver-64c4c6.netlify.app:8000/",
 });
 
